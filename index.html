@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Image Upload</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,13 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Image Upload</h1>
+
+      <form id="upload-form" action="/profile" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" />
+        <input type='text' name="title" />
+        <input type="submit">
+      </form>
+      <div id="upload-message"></div>
     </body>
 </html>
